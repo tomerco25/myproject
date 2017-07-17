@@ -1,1 +1,7 @@
 
+
+
+-add to settings.py  to INSTALLED_APPS = [ 'nameofyourapp' example - sitecategory]
+-you can create forms and menus in admin site by add class to models.py and than
+register it on admin.py admin.site.register(name of class from models.py)
+-for any changes in DB and admin site do:"python manage.py makemigrations" and "python manage.py migrate"

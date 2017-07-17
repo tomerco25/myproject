@@ -22,6 +22,7 @@ from sitecategory import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^tomer', views.tomer, name='home'),
-    url(r'^$', views.homepage),
+    url(r'^$', views.homepage_template),
+    # url(r'^$', views.homepage),
     url(r'^category/', include('sitecategory.urls')),
 ]
